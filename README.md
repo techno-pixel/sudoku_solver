@@ -1,4 +1,4 @@
-# sudoku_solver
+# sudoku-solver
 Solve any sudoku grid automatically
 
 How it works:
