@@ -22,10 +22,10 @@ Create a boolean to check the personal 3x3 grid:
   * (0,0) (0,1) (0,2) -- (1,0) (1,1) (1,2) -- (2,0) (2,1) (2,2)
   * since we are using integers, the division is a FLOOR division. we have a simple arithmetic solution
   * if we are in row 4, col 2 for example
-  * 4/3 = 1 -- 2/3 = 0 .... so we are in block (1,0) which is correct BLOCK
+  * 4/3 = 1 -- 2/3 = 0 .... so we are in block (1,0) which is the correct BLOCK
   * by multiplying the answer by 3, and also adding a 2 later on, we can find the corners of the block
-  * 1*3 && 1*3+2 = 3 & 5 - so the row boundaries will be from row 3 and row 5
-  * 0*3 && 0*3+2 = 0 & 2 - so the column boundaries will be from col 0 and col 2
+  * 1 * 3 && 1 * 3 + 2 = 3 & 5 - so the row boundaries will be from row 3 and row 5
+  * 0 * 3 && 0 * 3 + 2 = 0 & 2 - so the column boundaries will be from col 0 and col 2
   
 Create a boolean for checking Row and one for checking Column 
 
