@@ -32,13 +32,14 @@ Create a boolean for checking Row and one for checking Column
 With these 3 booleans, we can make another boolean called "isAllowed" to combine them, since all 3 need to match to false.
 
 Finally, set the location using a while loop with recursion:
-    * set counter at 1 (the value from 1-9 that we add, which we will increase or decrease)
-    * location will be under 81 because there are 81 squares on a 9x9 sudoku grid
-    * to find the location, we do location / 9 and for column location % 9 to get a remainder
-    * apply the booleans, set the value, increase location, reiterate through the loop
-    * if it can no longer add a value, this is where the } else { after ret == true comes in
-    * we set the value at 0 again, and backtrack with l--
-    * increase the count of the last number if able to, or set to 0 and backtrack again
+
+   * set counter at 1 (the value from 1-9 that we add, which we will increase or decrease)
+   * location will be under 81 because there are 81 squares on a 9x9 sudoku grid
+   * to find the location, we do location / 9 and for column location % 9 to get a remainder
+   * apply the booleans, set the value, increase location, reiterate through the loop
+   * if it can no longer add a value, this is where the } else { after ret == true comes in
+   * we set the value at 0 again, and backtrack with l--
+   * increase the count of the last number if able to, or set to 0 and backtrack again
     
 Creeate a solveGrid function, set the location to 0 to start in top left corner. Print the grid within solveGrid
 
