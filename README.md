@@ -34,7 +34,7 @@ With these 3 booleans, we can make another boolean called "isAllowed" to combine
 Finally, set the location using a while loop with recursion:
 
    * set counter at 1 (the value from 1-9 that we add, which we will increase or decrease)
-   * location will be under 81 because there are 81 squares on a 9x9 sudoku grid
+   * location will be under 81 because there are 81 squares on a 9x9 sudoku grid (and greater than 0)
    * to find the location, we do location / 9 and for column location % 9 to get a remainder
    * apply the booleans, set the value, increase location, reiterate through the loop
    * if it can no longer add a value, this is where the } else { after ret == true comes in
